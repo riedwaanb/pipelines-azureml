@@ -16,7 +16,7 @@ steps:
 - task: AzureCLI@1
   displayName: 'Attach folder to workspace'
   inputs:
-    azureSubscription: 'Microsoft Azure Internal Consumption'
+    azureSubscription: 'b9f1c816-0637-419c-b0f6-a8392690c7aa'
     scriptLocation: inlineScript
     inlineScript: 'az ml folder attach -w myaiwork -g ai'
 
@@ -51,6 +51,6 @@ steps:
 - task: AzureCLI@1
   displayName: 'Delete deployed service'
   inputs:
-    azureSubscription: 'build-demo'
+    azureSubscription: 'b9f1c816-0637-419c-b0f6-a8392690c7aa'
     scriptLocation: inlineScript
     inlineScript: 'az ml service delete -n acicicd'
